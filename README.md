@@ -43,5 +43,25 @@ The development of Campus Connect is backed by a rigorous study selection proces
 
 **1. Clone the repository**
 ```bash
+
 git clone [https://github.com/your-username/campus-connect.git](https://github.com/your-username/campus-connect.git)
 cd campus-connect
+# Install backend dependencies
+cd backend
+npm install
+
+# Install frontend dependencies
+cd ../frontend
+npm install
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PAYMENT_GATEWAY_KEY=your_key
+MAPS_API_KEY=your_key
+
+# Run backend (from backend directory)
+npm run dev
+
+# Run frontend (from frontend directory)
+npm start
